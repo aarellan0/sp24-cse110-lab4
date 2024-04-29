@@ -19,3 +19,31 @@
 10. line 12 returns 3. This is because length was a constant declared at the beginning of the variable to be equal to the length of the input array, which had 3 elements. Its scope applies to the entire function as well.
 
 11. This functions returns an array [50,100,150]. The function works by applying the input discount (0.5) to the each of the values of the input array (100,200,300). After applying the discount, the new values then become 50,100,150, as is returned in the array.
+
+12. A - student.name
+    B - student['Grad Year']
+    C - student.greeting()
+    D - student['Favorite Teacher'].name
+    E - student.courseLoad[0]
+
+13. A - '3'+2 = 32, the 2 is treated a string, thus the result is the string concatenation
+    B - '3'-2 = 1, the '3' is converted into a integer because of substraction, so 3-2 = 1
+    C - 3 + null = 3, when used in arithmetic, null is treated as 0, so 3+0=3
+    D- '3' +null= 3null, since 3 is a string, the null is converted into a string and concatenated to 3, thus 3null
+    E - true + 3 = 4, true is converted to 1 numertically, and then added to 3, so 3+1=4
+    F - false + null = 0, false and null are converted to their numeric values of 0 and added, 0+0=0
+    G - '3'+undefined = 3undefined, undefined is converted into string and concatenated to 3, thus 3undefined
+    H - '3'-undefined = NaN, during subtraction, JS tries to make undefined into a number,but its not possible, thus not a number (NaN)
+
+14. A - '2' > 1 = true, when comparing, JS converts string '2' into a number, and then compared with 1, 2 > 1 = true
+    B - '2' < '12' = false, JS compares strings from left to right, since '2' is not less than '1', false is returned
+    C - '2' == 2 is true, == converts both operands to the same type, in this case '2' is converted into a number, and 2==2 is true
+    D - 2 === '2' is false, === does comparison without type conversion, since one is a string and one is a number, they are not the same
+    E - true == 2 is false, == converts both to the same type, and true is converted to 1, 1 == 2 is false
+    F - true === Boolean(2) is true, Boolean(2) becomes true, and true === true is correct
+
+15. Both the == and === operators are used for comparison, but == performs type converstion to make both operands of the same type, while === does not. Essentially, === is more strict in type and value comparison.
+
+16. 
+
+    
