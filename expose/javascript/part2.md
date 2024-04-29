@@ -48,6 +48,9 @@
 
 17. The result of calling modifyArray with parameters [1,2,3] and doSomething will return [2,4,6]. The doSomething function returns the input after being doubled. Inside the modifyArray function, a new array is filled with the return values of calling doSomethign on every item in the input array [1,2,3]. Since this function doubles numbers, the new array returned contains the original values doubled, thus [2,4,6].
 
-18. 
+18. See part2-question18.js
+
+19. The output of the code above is 1,4,3,2. 1 and 4 are executed synchronously, then 3 occurs with a timeout of 0, then lastly 2 is printed with a timeout of 1000.
+    
 
     
