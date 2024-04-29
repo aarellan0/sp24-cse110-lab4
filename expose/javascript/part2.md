@@ -44,6 +44,10 @@
 
 15. Both the == and === operators are used for comparison, but == performs type converstion to make both operands of the same type, while === does not. Essentially, === is more strict in type and value comparison.
 
-16. 
+16. See part2-question16.js
+
+17. The result of calling modifyArray with parameters [1,2,3] and doSomething will return [2,4,6]. The doSomething function returns the input after being doubled. Inside the modifyArray function, a new array is filled with the return values of calling doSomethign on every item in the input array [1,2,3]. Since this function doubles numbers, the new array returned contains the original values doubled, thus [2,4,6].
+
+18. 
 
     
